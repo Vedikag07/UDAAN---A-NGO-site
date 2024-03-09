@@ -1,0 +1,112 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="form2.css" />
+</head>
+<body>
+  
+ <div class="container">
+      <h1 class="form-title">Donation Details</h1>
+      <form action="#"id="paymentForm">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="Amount">Amount</label>
+            <input type="text"
+                    id="Amount"
+                    name="Amount"
+                    placeholder="Enter Amount"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="Currency">Currency</label>
+            <input type="text"
+                    id="Currency"
+                    name="Currency"
+                    placeholder="Enter Currency Code"/>
+          </div>
+          <div class="user-input-box">
+            <label for="Phone-number">Phone-number</label>
+            <input type="text"
+                    id="Phone-number"
+                    name="Phone-number"
+                    placeholder="Enter Phone-number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="Order-id">Order-id</label>
+            <input type="text"
+                    id="Order-id"
+                    name="Order-id"
+                    placeholder="Not Required"/>
+          </div>
+                <input type="hidden"
+                    id="Order-id"
+                    name="Order"
+                     value="<%orderid%>/>
+
+       
+        <div class="form-submit-btn">
+          <input type="submit" id ='rzp-button1'value="Pay Now">
+        </div>
+</div>
+  </form>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.getElementById('rzp-button1').onclick = function(e) {
+      e.preventDefault();
+
+      var amount = document.querySelector('[name="Amount"]').value;
+      var currency = document.querySelector('[name="Currency"]').value;
+      var orderId = document.querySelector('[name="Order-id"]').value;
+
+      var options = {
+        "key": "rzp_test_VyR5UUq4VfhzGF",
+        "amount": amount*100,
+        "currency": currency,
+        "name": "Udaan Foundation",
+        "description": "Donate",
+        "image": "log.png",
+        "order_id": orderId,
+        "handler": function(response) {
+  alert("Your Payment is Successful! Thanks For the Generous Donation");
+  window.location.href = "home.html";
+          console.log(response);
+      <!-- alert(response.razorpay_payment_id); -->
+      <!-- alert(response.razorpay_order_id);   -->
+       <!-- alert(response.razorpay_signature); -->
+
+          // After successful payment, send the response to your server for verification
+         
+        },
+        "theme": {
+          "color": "#99cc33"
+        }
+      };
+     
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+    };
+  </script>
+</body>
+</html>
+
+

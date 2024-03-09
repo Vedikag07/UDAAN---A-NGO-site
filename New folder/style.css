@@ -1,0 +1,937 @@
+
+
+    
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background-position: center;
+    background: url('../child2.jpg') ;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(180, 149, 223);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/*utility classes*/
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+/* ... Your existing CSS styles ... */
+
+#home {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#home .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#home h1 {
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(153, 18, 18);
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    color: brown;
+}
+/* ... Your existing CSS styles ... */
+
+#home {
+    background-color: #f2f2f2;
+    padding: 20px 0; /* Reduce the vertical padding */
+    text-align: center;
+    color: rgb(241, 234, 234); /* Change text color to black */
+}
+
+#home .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#home h1 {
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+    color:  rgb(255, 255, 255); /* Change heading color to black */
+    margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+#home p {
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    color:  rgb(3, 2, 2);
+    line-height: 1.5; /* Adjust line-height for better readability */
+    margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens, if needed */
+  #home h1 {
+    font-size: 3rem;
+  }
+  
+  #home p {
+    font-size: 1rem;
+  }
+}
+#home {
+    background-image: url('pexels-guduru-ajay-bhargav-939702.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Reduce the vertical padding */
+    text-align: center;
+    color: rgb(239, 223, 223); /* Change text color to black */
+}
+/* style.css */
+/* Reset some default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add a background color to the box */
+  .box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Center the text inside the box */
+  .box p.center {
+    text-align: center;
+  }
+  
+  /* Add some spacing to the donate button */
+  .box a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box a:hover {
+    background-color: #0056b3;
+  }
+/* style.css */
+/* ... (previous CSS styles) ... */
+
+/* Add a transition to create a smooth animation on hover */
+.box {
+    /* ... (previous styles) ... */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply a scale transform on hover to create a subtle animation */
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Add a transition to the donate button for a smooth hover effect */
+  .box a {
+    /* ... (previous styles) ... */
+    transition: background-color 0.3s ease;
+  }
+/* style.css */
+/* ... (previous CSS styles) ... */
+
+/* Add a light blue border to the box */
+.box {
+    /* ... (previous styles) ... */
+    border: 2px solid #00bfff; /* Light blue border color */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Add border-color transition */
+  }
+  
+  /* Apply a scale transform on hover to create a subtle animation */
+  .box:hover {
+    transform: scale(1.05);
+    border-color: #007BFF; /* Darker blue border color on hover */
+  }
+  
+  /* Add a transition to the donate button for a smooth hover effect */
+  .box a {
+    /* ... (previous styles) ... */
+    font-size: 14px; /* Reduce font size of the button text */
+    padding: 8px 15px; /* Adjust padding to make the button smaller */
+    transition: background-color 0.3s ease;
+  }
+  
+  .box a:hover {
+    background-color: #0056b3;
+  }
+/* style.css */
+/* ... (previous CSS styles) ... */
+
+/* Improve the appearance of the donate button */
+.box a {
+    /* ... (previous styles) ... */
+    font-size: 16px; /* Increase font size for better readability */
+    padding: 12px 30px; /* Adjust padding to give the button more space */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px; /* Create a rounded shape for the button */
+    background: linear-gradient(to right, #007BFF, #00bfff); /* Apply a gradient background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  /* Add a shadow on hover for a 3D effect */
+  .box a:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03); /* Slightly scale up the button on hover */
+  }
+  
+  /* Center the button text */
+  .box a::before {
+    content: "";
+    display: block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .box a span {
+    vertical-align: middle;
+  }
+  
+  /* Add some margin between the boxes for better spacing */
+  #services {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ... (previous CSS styles) ... */
+        /* ... (previous CSS styles) ... */
+
+#home {
+    background-image: url('pexels-guduru-ajay-bhargav-939702.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Reduce the vertical padding */
+    text-align: center;
+    color: rgb(239, 223, 223); /* Change text color to black */
+}
+
+#home .container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    position: relative; /* Add relative positioning for proper sliding effect */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+#home .slide {
+    display: none; /* Hide all slides by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home .slide.active {
+    display: block; /* Show the active slide */
+}
+
+#home img {
+    width: 100%; /* Set the image width to fill the slide */
+    height: 100%; /* Set the image height to fill the slide */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire slide */
+}
+
+/* Add animation for slide transitions */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Styling for the planning strategies section */
+#planning-strategies {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.strategy h3 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.strategy p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Styling for the planning strategies section */
+#planning-strategies {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    animation: fadeInUp 1s ease;
+}
+
+.strategy h3 {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 8px;
+}
+
+.strategy p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Styling for the planning strategies section */
+#planning-strategies {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    animation: fadeInUp 1s ease;
+    border: 2px solid #d1aaff; /* Light purple border */
+}
+
+.strategy h3 {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 8px;
+}
+
+.strategy p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Add Font Awesome icons to the strategies */
+.strategy h3 i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Add some spacing between the strategies and make them responsive */
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fadeInUp 1s ease;
+    border: 2px solid #d1aaff;
+}
+
+@media (max-width: 768px) {
+    .strategy {
+        flex-basis: 100%;
+    }
+}
+
+/* ... (previous CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Our Vision section */
+#our-vision {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+/* Join Us section */
+#join-us {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#join-us .h-secondary {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.join-us-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Us section */
+#contact-us {
+    padding: 40px 0;
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Join Us section */
+#join-us {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+#join-us .h-primary {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.join-us-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the position of the Join Us section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Join Us section */
+#join-us {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+#join-us .h-primary {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.join-us-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the position of the Join Us section */
+.container {
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.strategy {
+    flex-basis: calc(50% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid; /* Use CSS Grid to create a 2x2 matrix layout */
+    grid-template-columns: repeat(2, 1fr); /* Create two columns with equal width */
+    grid-gap: 20px; /* Add gap between the boxes */
+}
+
+.strategy {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+/* Animation for the boxes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ... (remaining CSS styles) ... */
+/* CSS for Slideshow and Overlay Text */
+.slideshow-container {
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slide-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .slide-text p {
+    font-size: 16px;
+  }
+  /* CSS for Slideshow and Transparent Overlay Text */
+.slideshow-container {
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slide-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .slide-text p {
+    font-size: 16px;
+  }
+  /* Styling for the Our Works section */
+#our-works {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center; /* Center align the content */
+}
+
+#our-works .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox to center the work items */
+    flex-wrap: wrap; /* Allow items to wrap if the container width is reduced */
+    justify-content: center; /* Center align the work items horizontally */
+}
+
+#our-works .h-primary {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#our-works .work-item {
+    flex: 0 0 300px; /* Each work item occupies 300px width */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#our-works .work-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#our-works .work-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 15px;
+}
+
+#our-works .work-item p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #our-works .work-item {
+        flex-basis: calc(50% - 40px); /* Each work item occupies 50% width with 40px margin in between */
+    }
+}
